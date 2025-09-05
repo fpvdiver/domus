@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Domus Arquitetura</title>
     <meta name="description"
-      content="Landing escura com hero clássico e layout Bauen-like." />
+      content="Pagina de projetos da Domus Arquitetura pelo profissional Gildo Alves" />
     <link rel="stylesheet" href="css/bauen-like.css" />
     <style>noscript .loader-wrapper{display:none!important}</style>
   </head>
@@ -586,29 +586,34 @@
 
       <script src="js/bauen-like.js" defer></script>
 
-      <script>
-  // Centraliza o botão e coloca logo abaixo do card, com gap de 24px
-  (function(){
-    const card = document.querySelector('.testi-card');
-    const btnWrap = document.querySelector('.promo-left');
-    const hero = document.querySelector('.promo-hero');
-    if(!card || !btnWrap || !hero) return;
+     <script>
+(function () {
+  const mq = window.matchMedia('(max-width: 980px)');
+  const card = document.querySelector('.testi-card');   // seu card “PROFISSIONAL”
+  const playWrap = document.querySelector('.promo-left'); // wrapper do botão
 
-    function placeBtn(){
-      const cardRect = card.getBoundingClientRect();
-      const heroRect = hero.getBoundingClientRect();
-      const gap = 24; // espaço entre card e botão
-      const top = (cardRect.bottom - heroRect.top) + gap;
+  if (!playWrap) return;
 
-      btnWrap.style.top = `${top}px`;
-      btnWrap.style.left = '50%';
-      btnWrap.style.transform = 'translateX(-50%)';
+  function place() {
+    if (mq.matches) {
+      // mobile/tablet: centraliza logo abaixo do card
+      const top = (card?.offsetTop || 0) + (card?.offsetHeight || 0) + 24;
+      playWrap.style.left = '70%';
+      playWrap.style.top = top + 'px';
+      playWrap.style.transform = 'translateX(-50%)';
+    } else {
+      // desktop: volta para CSS padrão (posição original)
+      playWrap.style.left = '';
+      playWrap.style.top = '';
+      playWrap.style.transform = '';
     }
+  }
 
-    window.addEventListener('load', placeBtn);
-    window.addEventListener('resize', placeBtn);
-  })();
+  ['load','resize'].forEach(ev => window.addEventListener(ev, place));
+  mq.addEventListener('change', place);
+})();
 </script>
+
 
     </body>
   </html>
