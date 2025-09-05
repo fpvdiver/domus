@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domus Arquitetura</title>
+    <meta name="description"
+      content="Landing escura com hero clássico e layout Bauen-like." />
+    <link rel="stylesheet" href="css/bauen-like.css" />
+    <style>noscript .loader-wrapper{display:none!important}</style>
+  </head>
+  <body>
+
+    <!-- Preloader (opcional) -->
+    <div id="preloader" class="loader-wrapper" aria-hidden="true">
+      <div class="loader"></div><div class="loading-text">Loading…</div>
+    </div>
+
+    <!-- WRAPPER 2 COLUNAS: barra (esq) + conteúdo (dir) -->
+    <div class="layout-2col">
+      <!-- SUA BARRA (não fixa) -->
+      <aside class="side-brand" aria-label="Brand">
+        <section class="barraEsquerdaIcons">
+          <a href="#home" class="side-logo" aria-label="Home">
+            <img src="img/domus.png" alt="domus" width="200" height="140" />
+            <div class="brand-label">
+              <strong class="brand-name">DOMUS</strong>
+            </div>
+             <small class="brand-tag">ARQUITETURA</small>
+          </a>
+
+          <nav class="side-social" aria-label="Redes sociais">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="X">x</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="TikTok">tt</a>
+          </nav>
+        </section>
+      </aside>
+
+      <!-- Molduras nos cantos direitos (decorativo, como no demo) -->
+ 
+
+      <!-- Conteúdo deslocado pela sidebar -->
+      <div class="page page--hero-fullbleed">
+
+        <!-- NAVBAR – faixa escura no logo + transparente no restante -->
+        <header class="nav-bauen" role="banner" aria-label="Barra de navegação">
+          <div class="nav-inner">
+            <!-- bloco escuro do logo (fixo dentro da navbar) -->
+            <a class="nav-logo" href="#home" aria-label="Home">
+              <img src="img/domus.png" alt="GAF" />
+            </a>
+
+            <!-- menu centralizado -->
+            <button class="nav-toggle" aria-expanded="false"
+              aria-controls="nav-menu" aria-label="Abrir menu">
+              <span class="bar"></span>
+            </button>
+
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+              <li role="none"><a role="menuitem" class="link is-active"
+                  href="#home">Inicio</a></li>
+
+              <li role="none"><a role="menuitem" class="link"
+                  href="#about">Destaque</a></li>
+
+              <li role="none"><a role="menuitem" class="link"
+                  href="#projects">Projeto</a></li>
+
+              <li role="none"><a role="menuitem" class="link"
+                  href="#services">Atuação</a></li>
+
+              <li role="none"><a role="menuitem" class="link"
+                  href="#contact">Contato</a></li>
+            </ul>
+
+            <!-- “corner” decorativo à direita -->
+
+          </div>
+        </header>
+
+        <!-- HERO (slider clássico full-bleed à direita) -->
+        <section id="home" class="bn-hero hero-bauen" data-slider="classic" data-interval="6500" aria-label="Destaques">
+
+  <!-- Slide 1 -->
+  <!-- Slide 1 -->
+<div class="slide is-active"
+     style="background-image:
+       linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.60) 100%),
+       url('img/banner1.jpg');">
+  <div class="caption-wrap">
+    <div class="caption-box">
+      <span class="sub-title">ARQUITETURA</span>
+      <h1 class="title">DESIGN INOVADOR<br>EM MINAS GERAIS</h1>
+      <p class="desc">
+        Projetos arquitetônicos que unem estética, funcionalidade e inovação, 
+        criando espaços únicos e memoráveis.  
+        <br><em>Innovative architecture that blends aesthetics and functionality.</em>
+      </p>
+      <a class="btn btn-outline" href="#projects">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide"
+     style="background-image:
+       linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.60) 100%),
+       url('img/banner2.jpg');">
+  <div class="caption-wrap">
+    <div class="caption-box">
+      <span class="sub-title">INTERIORES</span>
+      <h1 class="title">CONFORTO &<br>FUNCIONALIDADE</h1>
+      <p class="desc">
+        Ambientes internos planejados para proporcionar bem-estar, 
+        sofisticação e praticidade.  
+        <br><em>Interiors designed for comfort, sophistication, and performance.</em>
+      </p>
+      <a class="btn btn-outline" href="#services">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide"
+     style="background-image:
+       linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.60) 100%),
+       url('img/banner3.jpg');">
+  <div class="caption-wrap">
+    <div class="caption-box">
+      <span class="sub-title">URBANISMO</span>
+      <h1 class="title">MAPEAMENTO &<br>PLANEJAMENTO</h1>
+      <p class="desc">
+        Soluções urbanas estratégicas que conectam pessoas, espaços 
+        e mobilidade de forma sustentável.  
+        <br><em>Urban mapping and planning that drive sustainable growth.</em>
+      </p>
+      <a class="btn btn-outline" href="#contact">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- setas + dots -->
+  <div class="slider-nav" aria-label="Navegação do slider">
+    <button class="nav-prev" aria-label="Anterior">‹</button>
+    <button class="nav-next" aria-label="Próximo">›</button>
+  </div>
+  <div class="dots dots-left" aria-hidden="true"></div>
+</section>
+
+<!-- ================== SOBRE GILDO ================== -->
+<section id="about" class="section about-slice">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Texto (esquerda) -->
+      <div class="about-copy">
+        <h2 class="about-title">
+          <span class="word word-white">ARENA</span>
+          <span class="word word-gold">MRV</span>
+        </h2>
+
+        <p>
+    Símbolo de inovação e identidade, o Galo Inox é uma escultura monumental em aço inoxidável instalada na esplanada da Arena MRV.
+        </p>
+
+        <p>
+          Com 8 metros de altura e 13 toneladas, a obra alia arte, tecnologia e sustentabilidade, tornando-se um novo ícone urbano de Belo Horizonte.
+        </p>
+
+        <p>
+         O projeto foi concebido para representar modernidade e força, utilizando Aço Verde Aperam e incorporando recursos tecnológicos interativos. Mais que uma escultura, é um marco arquitetônico que transforma espaços em experiências memoráveis.
+        </p>
+      </div>
+
+      <!-- Mídia (direita) -->
+      <figure class="about-figure">
+        <div class="media-frame">
+          <img src="img/galoinox.png" alt="Projeto Minas" loading="lazy">
+        </div>
+        <figcaption class="media-tag">Mascote Atlético - MG</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- NOSSOS PROJETOS -->
+        <section id="projects" class="section projects-slice">
+          <div class="container">
+            <h2 class="projects-title">
+              <span class="word word-white">NOSSOS</span>
+              <span class="word word-gold">PROJETOS</span>
+            </h2>
+
+            <div class="projects-grid">
+              <a href="#" class="project-card">
+                <figure class="project-media">
+                  <img src="img/banner2.jpg" alt="Cotton House"
+                    loading="lazy" />
+                  <figcaption class="project-caption">
+                    <span class="kicker">Chacará</span>
+                    <span class="name">Ipatinga</span>
+                  </figcaption>
+                </figure>
+              </a>
+
+              <a href="#" class="project-card">
+                <figure class="project-media">
+                  <img src="img/banner3.jpg" alt="Armada Center"
+                    loading="lazy" />
+                  <figcaption class="project-caption">
+                    <span class="kicker">Sitio</span>
+                    <span class="name">Belo Horizonte</span>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+
+          
+          </div>
+        </section>
+
+        <!-- NOSSA ATUAÇÃO (serviços) -->
+        <section id="services" class="section svc-slice">
+          <div class="container">
+    
+            <h2 class="svc-title">
+              <span class="word word-white">NOSSA</span>
+              <span class="word word-gold">ATUAÇÃO</span>
+            </h2>
+
+            <div class="svc-grid">
+              <article class="svc-item" data-idx="01">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                    stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 46h40M12 46V28l16-10 16 10v18" />
+                    <path d="M22 46V34h12v12" />
+                  </svg>
+                </div>
+                <h3 class="svc-head">ARQUITETURA</h3>
+                <span class="svc-underline" aria-hidden="true"></span>
+                <p class="svc-text">Projetos arquitetônicos que unem estética, funcionalidade e inovação, transformando ideias em espaços únicos e memoráveis. Cada detalhe é pensado para valorizar a identidade do cliente e integrar-se de forma harmônica ao ambiente.</p>
+              </article>
+
+              <article class="svc-item" data-idx="02">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                    stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 46h40M12 46V30l16-12 16 12v16" />
+                    <path d="M22 46V34h12v12" />
+                    <path d="M16 30h24" />
+                  </svg>
+                </div>
+                <h3 class="svc-head">INTERIORES</h3>
+                <span class="svc-underline" aria-hidden="true"></span>
+                <p class="svc-text">Desenvolvimento de ambientes internos que priorizam conforto, bem-estar e sofisticação. Trabalhamos com design inteligente e soluções personalizadas para entregar projetos que inspiram e acolhem.</p>
+              </article>
+
+              <article class="svc-item" data-idx="03">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                    stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 46h36M14 46V20l12-4v30M42 46V14l-12 4" />
+                    <path d="M26 26h8M26 32h8M26 38h8" />
+                  </svg>
+                </div>
+                <h3 class="svc-head">MAPEAMENTO URBANO</h3>
+                <span class="svc-underline" aria-hidden="true"></span>
+                <p class="svc-text">Planejamento urbano e mapeamento estratégico que potencializam o desenvolvimento das cidades. Atuamos com visão ampla e sustentável, criando soluções que conectam pessoas, espaços e mobilidade.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROMO + TESTIMONIAL (com faixa de ícones) -->
+        <section id="promo" class="section promo-slice">
+          <div class="promo-hero"
+            style="background-image:url('img/banner3.jpg')">
+            <div class="promo-overlay" aria-hidden="true"></div>
+
+            <!-- CTA vídeo (esquerda) -->
+        <div class="promo-left">
+  <button class="play-cta" type="button" data-video="img/teste1.mp4">
+    <span class="triangle" aria-hidden="true"></span>
+    <span class="sr-only">Reproduzir vídeo</span>
+  </button>
+  <div class="play-label"></div>
+</div>
+
+            <!-- Depoimentos (direita) -->
+            <aside class="testi-card" data-testi>
+              <h3 class="testi-title">Profissional</h3>
+              <div class="testi-sep" aria-hidden="true"></div>
+
+              <div class="testi-track">
+                <article class="testi is-active">
+                  <p class="testi-text">Arquiteto e urbanista, graduado pela universidade católica do leste de minas Unileste.
+                    Trabalha com projetos há mais de 10 anos é especializado em maquete eletronica.
+
+
+                  </p>
+                  <div class="testi-author">
+                    <img src="img/avatar-1.jpg" alt class="avatar" />
+                    <div class="meta"><strong>Gildo
+                        Alves</strong><span> Arquiteto&nbsp;Urbanista</span></div>
+                  </div>
+                </article>
+
+                <article class="testi">
+                  <p class="testi-text">Nulla facilisi. Etiam dictum, massa at
+                    laoreet tempus, eros risus imperdiet sapien, sed posuere
+                    justo nisl vel augue.</p>
+                  <div class="testi-author">
+                    <img src="img/avatar-2.jpg" alt class="avatar" />
+                    <div class="meta"><strong>Amelia
+                        Clark</strong><span>Interior Designer</span></div>
+                  </div>
+                </article>
+
+                <article class="testi">
+                  <p class="testi-text">Proin a laoreet mi. Sed vitae ligula
+                    sapien. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et ultrices posuere cubilia.</p>
+                  <div class="testi-author">
+                    <img src="img/avatar-3.jpg" alt class="avatar" />
+                    <div class="meta"><strong>Marco Silva</strong><span>Real
+                        Estate CEO</span></div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="testi-dots" aria-hidden="true"></div>
+              <span class="quote-ghost" aria-hidden="true">“</span>
+            </aside>
+          </div>
+
+          <div class="promo-icons">
+            <div class="container promo-icons-row">
+              <span class="ico"><svg viewBox="0 0 48 48"><path
+                    d="M8 40h32M12 40V24l12-8 12 8v16M20 40V30h8v10" fill="none"
+                    stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" /></svg></span>
+              <span class="ico"><svg viewBox="0 0 48 48"><path
+                    d="M8 40h32M12 40V20l12-6 12 6v20M18 24h12" fill="none"
+                    stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" /></svg></span>
+              <span class="ico"><svg viewBox="0 0 48 48"><path
+                    d="M10 40h28M14 40V14l10-3v29M38 40V10l-10 3" fill="none"
+                    stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" /></svg></span>
+              <span class="ico"><svg viewBox="0 0 48 48"><path
+                    d="M8 40h32M12 40V22l10-4v22M36 40V18l-10 4" fill="none"
+                    stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" /></svg></span>
+              <span class="ico"><svg viewBox="0 0 48 48"><circle cx="24" cy="24"
+                    r="10" fill="none" stroke="currentColor"
+                    stroke-width="2.2" /><path
+                    d="M24 8v6M24 34v6M8 24h6M34 24h6" fill="none"
+                    stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" /></svg></span>
+            </div>
+          </div>
+        </section>
+
+        <dialog id="lightbox-dialog">
+  <div class="lb-wrap">
+    <button class="lb-close" aria-label="Fechar">✕</button>
+    <div class="lb-content" id="lbContent"></div>
+  </div>
+</dialog>
+
+
+       <!-- ===================== CONTATO ===================== -->
+<section id="contact" class="section contact-slice">
+  <div class="container">
+
+  <h2 class="svc-title">
+              <span class="word word-white">fale</span>
+              <span class="word word-gold">Conosco</span>
+            </h2>
+
+
+    <div class="contact-grid">
+
+      <!-- Formulário -->
+      <form class="contact-form card" aria-labelledby="contact-form-title" novalidate>
+        <h3 id="contact-form-title" class="form-title">Envie uma mensagem</h3>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-name">Nome</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="field">
+            <label for="cf-email">E-mail</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-phone">Telefone (opcional)</label>
+            <input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" pattern="[\d\s()+\-\.]{8,}">
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Assunto</label>
+            <input id="cf-subject" name="subject" type="text" placeholder="Ex.: Reforma residencial">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="cf-message">Mensagem</label>
+          <textarea id="cf-message" name="message" rows="6" required placeholder="Conte um pouco do seu projeto, prazos e objetivos…"></textarea>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" required>
+          <span>Concordo em ser contatado(a) e aceito a política de privacidade.</span>
+        </label>
+
+        <button class="btn btn-gold" type="submit">Enviar</button>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- Informações + Mapa -->
+      <aside class="contact-info">
+
+        <div class="card info-card">
+          <h3>Onde estamos</h3>
+          <ul class="info-list">
+            <li>
+              <span class="ico" aria-hidden="true">🏛️</span>
+              <div>
+                <strong>Endereço</strong>
+                <p>Rua Exemplo, 123 — São Paulo, SP</p>
+              </div>
+            </li>
+            <li>
+              <span class="ico" aria-hidden="true">✉️</span>
+              <div>
+                <strong>E-mail</strong>
+                <p><a href="mailto:contato@studio.com">contato@studio.com</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="ico" aria-hidden="true">☎️</span>
+              <div>
+                <strong>Telefone</strong>
+                <p><a href="tel:+551155550000">(11) 5555-0000</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map card" aria-label="Mapa">
+          <!-- se quiser usar um embed real, troque o conteúdo abaixo por um <iframe> do Google Maps -->
+          <div class="map-placeholder">Mapa / Imagem do escritório</div>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-top">
+    <div class="footer-col">
+      <div class="brand">
+        <div class="brand-mark">DOMUS</div>
+        <div class="brand-sub">Arquitetura</div>
+      </div>
+      <p class="muted">Soluções inteligentes com design e performance para espaços residenciais e corporativos.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Links rápidos">
+      <h4>Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#services">Atuação</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul class="footer-contacts">
+        <li><a href="mailto:contato@studio.com">contato@domus.com</a></li>
+        <li><a href="tel:+551155550000">(11) 5555-0000</a></li>
+        <li>Rua Exemplo, 123 — São Paulo, SP</li>
+      </ul>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Behance">Be</a>
+        <a href="#" aria-label="Dribbble">Db</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="year"></span> LAHNTECH Smart Systems — Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+        <!-- Back-to-top -->
+        <button class="progress-wrap" data-backtop aria-label="Voltar ao topo"
+          title="Topo"></button>
+
+      </div><!-- /.page -->
+
+      <script>
+(function () {
+  const btn = document.querySelector('.play-cta');
+  if (!btn) return;
+
+  const dlg = document.getElementById('lightbox-dialog');
+  const content = document.getElementById('lbContent');
+  const closeBtn = dlg.querySelector('.lb-close');
+
+  function openMedia(src) {
+    content.innerHTML = '';
+
+    if (/\.mp4(\?.*)?$/i.test(src)) {
+      const video = document.createElement('video');
+      video.src = src;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.style.maxWidth = '92vw';
+      video.style.maxHeight = '88vh';
+      content.appendChild(video);
+    } else {
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      iframe.width = '1280';
+      iframe.height = '720';
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+      iframe.loading = 'lazy';
+      iframe.frameBorder = '0';
+      content.appendChild(iframe);
+    }
+    dlg.showModal();
+  }
+
+  btn.addEventListener('click', () => {
+    const src = btn.getAttribute('data-video');
+    if (src) openMedia(src);
+  });
+
+  closeBtn.addEventListener('click', () => {
+    dlg.close();
+    content.innerHTML = '';
+  });
+
+  // fecha ao clicar fora
+  dlg.addEventListener('click', (e) => {
+    if (e.target === dlg) {
+      dlg.close();
+      content.innerHTML = '';
+    }
+  });
+})();
+</script>
+
+
+      <script src="js/bauen-like.js" defer></script>
+
+      <script>
+  // Centraliza o botão e coloca logo abaixo do card, com gap de 24px
+  (function(){
+    const card = document.querySelector('.testi-card');
+    const btnWrap = document.querySelector('.promo-left');
+    const hero = document.querySelector('.promo-hero');
+    if(!card || !btnWrap || !hero) return;
+
+    function placeBtn(){
+      const cardRect = card.getBoundingClientRect();
+      const heroRect = hero.getBoundingClientRect();
+      const gap = 24; // espaço entre card e botão
+      const top = (cardRect.bottom - heroRect.top) + gap;
+
+      btnWrap.style.top = `${top}px`;
+      btnWrap.style.left = '50%';
+      btnWrap.style.transform = 'translateX(-50%)';
+    }
+
+    window.addEventListener('load', placeBtn);
+    window.addEventListener('resize', placeBtn);
+  })();
+</script>
+
+    </body>
+  </html>
