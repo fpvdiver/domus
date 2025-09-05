@@ -1279,3 +1279,14 @@ font-style: bold;
   }
   .play-label{ font-size:12px; letter-spacing:.26em; }
 }
+
+
+/* Desktop: fixa o play-cta no ponto desejado (ajuste fino: left/top) */
+@media (min-width: 981px){
+  .promo-left{
+    left: calc(var(--sidebar-w) + 120px) !important;  /* ← ajuste fino */
+    top: 220px !important;                             /* ← ajuste fino */
+    transform: none !important;
+    z-index: 2;
+  }
+}
