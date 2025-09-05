@@ -641,22 +641,7 @@ font-style: bold;
 @media (max-width:1280px){ .promo-left{ left:calc(var(--sidebar-w) + 160px) } }
 @media (max-width:980px){ .promo-left{ left:40px; top:120px } }
 
-/* Botão play */
-.play-cta{
-  width: 160px; height:160px; border-radius:50%;
-  background: radial-gradient(ellipse at 50% 50%, rgba(183,155,100,.95) 0%, rgba(183,155,100,.82) 70%, rgba(183,155,100,.65) 100%);
-  border:0; display:grid; place-items:center; cursor:pointer; transition: transform .18s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,.28);
-}
-.play-cta .triangle{
-  width:0; height:0; border-left:22px solid #fff; border-top:14px solid transparent; border-bottom:14px solid transparent; margin-left:6px;
-}
-.play-cta:hover{ transform: translateY(-2px) scale(1.02) }
 
-.play-label{
-  margin-top: 18px; color:#fff; letter-spacing:.32em; font:700 13px/1 "Didact Gothic",sans-serif; text-transform:uppercase;
-  opacity:.95;
-}
 
 /* Card de depoimento (direita) */
 .testi-card{
